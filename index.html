@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitClub</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- PRICING POPUP -->
+<div class="pricing-popup" id="pricingPopup">
+  <div class="popup-content">
+
+    <span class="close-btn" id="closePopup">&times;</span>
+
+    <h2 class="popup-title">Choose Your Plan</h2>
+
+    <div class="pricing-grid">
+
+      <!-- STARTER -->
+      <div class="plan-card">
+        <h3>Starter Plan</h3>
+        <p class="plan-sub">For casual fitness training</p>
+
+        <div class="plan-price">रू 2499 <span>/month</span></div>
+
+      <button class="btn dark big">Get 1 Month</button>
+
+        <ul>
+          <li>Basic workouts</li>
+          <li>Progress tracking</li>
+          <li>Beginner-friendly routines</li>
+        </ul>
+      </div>
+
+      <!-- PRO -->
+      <div class="plan-card featured">
+        <h3>3 Month Plan</h3>
+        <p class="plan-sub">Best for visible progress and habit building</p>
+
+        <div class="plan-price">रू 1999 <span>/month</span></div>
+
+        <button class="btn primary big">Get 3 Month</button> 
+
+        <ul>
+          <li>Everything in 1 Month</li>
+          <li>Progress-based training</li>
+          <li>Habit-building support</li>
+        </ul>
+      </div>
+
+      <!-- 1 YEAR -->
+      <div class="plan-card">
+        <div class="badge">BEST VALUE</div>
+
+        <h3>1 Year Plan</h3>
+        <p class="plan-sub">Commit to full transformation and long-term results</p>
+
+        <div class="plan-price">रू 1599 <span>/month</span></div>
+
+        <button class="btn dark big">Get 1 Year</button>
+
+        <ul>
+          <li>Everything in 3 Month</li>
+          <li>Long-term guidance</li>
+          <li>Priority coaching support</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+    <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-left">
+        <div class="logo">FITCLUB</div>
+    </div>
+
+    <nav class="nav-center">
+        <a href="#home">Home</a>
+        <a href="#programs">Programs</a>
+        <a href="#trainers">Trainers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+        <a href="#" class="btn primary open-pricing">Join Now</a>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </div>
+</header>   
+
+    <!-- HERO -->   
+ <section class="hero" id="home">
+        <div class="overlay"></div>
+
+        <div class="hero-content">
+    <div class="social-proof">
+    <span class="fire">7-Day Free Trial</span>
+    <span class="social-proof-sub">— No Commitment</span>
+</div>
+
+<h1 style="line-height:1.05; letter-spacing:-0.5px;">
+  
+  <span class="hero-line-1">
+   <span>Train</span>
+    <span class="accent">Different</span>.
+  </span>
+
+ <span class="hero-line-2">
+    Look Different.
+  </span>
+
+</h1>
+            <p>Join a gym focused on real progress—not crowded rooms and empty promises.</p>
+
+            <div class="hero-buttons">
+               <a href="#" class="btn primary watch-btn" aria-label="Watch">
+                  <span class="play-icon" aria-hidden="true">▶</span>
+                  <span>Watch</span>
+                </a>
+                <a href="#programs" class="btn secondary">View Programs</a>
+            </div>
+            <p class="stats-title" style="font-size:12px; font-style:italic; padding-top:8%">For Those Who Are <span class="bold">Serious</span> About Changing Their Body</p>
+            <div class="stats-wrapper">
+    <div class="stats-track">
+        <div class="stat"><h3>100+</h3><p>Members</p></div>
+<div class="stat"><h3>15+</h3><p>Trainers</p></div>
+<div class="stat"><h3>24/7</h3><p>Access</p></div>
+<div class="stat"><h3>7+</h3><p>Years Experience</p></div>
+
+        <!-- duplicate for smooth loop -->
+       <div class="stat"><h3>100+</h3><p>Members</p></div>
+<div class="stat"><h3>15+</h3><p>Trainers</p></div>
+<div class="stat"><h3>24/7</h3><p>Access</p></div>
+<div class="stat"><h3>7+</h3><p>Years Experience</p></div>
+    </div>
+</div>
+        </div>
+       
+
+
+    </section>
+    <section class="programs reveal" id="programs">
+    <div class="container">
+       <h2>Built For <span class="accent">Real Results</span></h2>
+        <!-- <p class="subtitle">No fluff. Just programs that work.</p> -->
+
+        <div class="program-grid">
+
+            <div class="program-card">
+                <img src="assets/images/strength.webp" alt="">
+                <h3>Strength Training</h3>
+                <p>Build real muscle and raw strength using structured progressive overload,
+guided by expert trainers who track your performance every week.
+</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="program-card">
+                <img src="assets/images/cardio.jpg" alt="">
+                <h3>Fat Loss</h3>
+                <p>Lose stubborn fat with a proven system combining smart workouts,
+nutrition guidance, and accountability to keep you consistent.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="program-card">
+                <img src="assets/images/endurance.webp" alt="">
+                <h3>Conditioning</h3>
+                <p>Boost endurance, speed, and athletic performance with high-intensity
+training designed to push your limits safely.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="program-card">
+                <img src="assets/images/GroupTraining.jpg" alt="">
+                <h3>Group Training & Classes</h3>
+                <p>Stay motivated and train with others in high-energy group sessions led by expert coaches.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="program-card">
+                <img src="assets/images/diet.jpg" alt="">
+                <h3>Nutrition & Support</h3>
+                <p>Get personalized nutrition guidance and ongoing support to maximize your results.</p>
+                <a href="#">Read More</a>
+            </div>
+
+            <div class="program-card">
+                <img src="assets/images/recovery.jpg" alt="">
+                <h3>Health & Recovery</h3>
+                <p>Improve mobility, prevent injuries, and recover faster with structured recovery systems.</p>
+                <a href="#">Read More</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="trainers reveal" id="trainers">
+  <div class="container">
+    <h2>Meet Our <span class="accent">Experts</span></h2>
+
+    <div class="trainer-grid">
+
+      <div class="trainer-card">
+        <img src="assets/images/alex.jpg" alt="">
+        <div class="trainer-info">
+          <h3>Alex Carter</h3>
+          <p>Strength Coach</p>
+          <span>8+ Years Experience</span>
+        </div>
+      </div>
+
+      <div class="trainer-card">
+        <img src="assets/images/sarah.jpg" alt="">
+        <div class="trainer-info">
+          <h3>Sarah Lee</h3>
+          <p>Fat Loss Specialist</p>
+          <span>6+ Years Experience</span>
+        </div>
+      </div>
+
+      <div class="trainer-card">
+        <img src="assets/images/mike.jpg" alt="">
+        <div class="trainer-info">
+          <h3>Mike Ross</h3>
+          <p>Conditioning Coach</p>
+          <span>7+ Years Experience</span>
+        </div>
+      </div>
+
+    </div>
+     <a href="#" class="view-all">View All Trainers →</a>
+  </div>
+</section>
+
+<!-- TRAINERS POPUP -->
+<div class="modal" id="trainersPopup">
+  <div class="modal-content">
+    <span class="modal-close" data-modal="trainersPopup">&times;</span>
+    <h2 class="modal-title">All Trainers</h2>
+    <div class="trainer-grid-full">
+      <div class="trainer-card">
+        <img src="assets/images/alex.jpg" alt="">
+        <div class="trainer-info">
+          <h3>Alex Carter</h3>
+          <p>Strength Coach</p>
+          <span>8+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/images/sarah.jpg" alt="">
+        <div class="trainer-info">
+          <h3>Sarah Lee</h3>
+          <p>Fat Loss Specialist</p>
+          <span>6+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/images/mike.jpg" alt="">
+        <div class="trainer-info">
+          <h3>Mike Ross</h3>
+          <p>Conditioning Coach</p>
+          <span>7+ Years Experience</span>
+        </div>
+      </div>
+
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Jessica Brown</h3>
+          <p>Nutrition Coach</p>
+          <span>5+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>David Kim</h3>
+          <p>Mobility Specialist</p>
+          <span>9+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Emma Wilson</h3>
+          <p>Group Fitness</p>
+          <span>4+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Ryan Patel</h3>
+          <p>Strength Coach</p>
+          <span>6+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Lisa Chen</h3>
+          <p>Fat Loss Coach</p>
+          <span>7+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Mark Johnson</h3>
+          <p>Endurance Coach</p>
+          <span>10+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Sophia Garcia</h3>
+          <p>Recovery Specialist</p>
+          <span>5+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Tom Rivera</h3>
+          <p>HIIT Coach</p>
+          <span>8+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Amy Taylor</h3>
+          <p>Nutrition Coach</p>
+          <span>6+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Chris Lopez</h3>
+          <p>Strength Coach</p>
+          <span>7+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Nina Singh</h3>
+          <p>Fat Loss Specialist</p>
+          <span>5+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>James Park</h3>
+          <p>Conditioning Coach</p>
+          <span>9+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Laura Adams</h3>
+          <p>Health & Recovery</p>
+          <span>8+ Years Experience</span>
+        </div>
+      </div>
+      <div class="trainer-card">
+        <img src="assets/icons/person.png" alt="">
+        <div class="trainer-info">
+          <h3>Kevin Brown</h3>
+          <p>Mobility Specialist</p>
+          <span>6+ Years Experience</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO POPUP -->
+<div class="modal" id="videoPopup">
+  <div class="modal-content video-modal">
+    <span class="modal-close" data-modal="videoPopup">&times;</span>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/g_bMfP6_TOw?autoplay=1&mute=1&rel=0"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>
+
+<!-- PROGRAM POPUP -->
+<div class="modal" id="programPopup">
+  <div class="modal-content program-modal">
+    <span class="modal-close" data-modal="programPopup">&times;</span>
+    <div class="program-details">
+      <h2 class="program-title"></h2>
+      <p class="program-desc"></p>
+      <ul class="program-features"></ul>
+    </div>
+  </div>
+</div>
+
+<!-- SUCCESS STORIES POPUP -->
+<div class="modal" id="storiesPopup">
+  <div class="modal-content stories-modal">
+    <span class="modal-close" data-modal="storiesPopup">&times;</span>
+    <h2 class="modal-title">All Success Stories</h2>
+    <div class="stories-grid">
+      <!-- 20 Success Stories -->
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/images/rahul.jpg" alt="">
+          <div>
+            <h4>Rahul Sharma</h4>
+            <span>100kg → 82kg</span>
+          </div>
+        </div>
+        <p>Lost 18kg in 4 months. The structure made everything simple. Finally confident in my own skin.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/images/amit.jpg" alt="">
+          <div>
+            <h4>Amit Patel</h4>
+            <span>Skinny → Lean Muscle</span>
+          </div>
+        </div>
+        <p>Finally built muscle after years of trying different gyms. Gained 8kg of muscle in 6 months.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/images/sandeep.jpg" alt="">
+          <div>
+            <h4>Sandeep Kumar</h4>
+            <span>Beginner → Athlete</span>
+          </div>
+        </div>
+        <p>My strength and endurance improved massively. Deadlift went from 60kg to 140kg.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/images/rohit.jpg" alt="">
+          <div>
+            <h4>Rohit Singh</h4>
+            <span>Fat Loss</span>
+          </div>
+        </div>
+        <p>Coaches actually care. Results are real. Down 12kg and feel unstoppable.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/images/vikram.jpg" alt="">
+          <div>
+            <h4>Vikram Desai</h4>
+            <span>Transformation</span>
+          </div>
+        </div>
+        <p>Best decision I made this year. Complete body transformation in 5 months.</p>
+      </div>
+
+      <!-- Additional 15 stories -->
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Priya Gupta</h4>
+            <span>75kg → 58kg</span>
+          </div>
+        </div>
+        <p>Lost 17kg postpartum. Regained confidence and energy for my kids.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Arjun Mehra</h4>
+            <span>Strength Gains</span>
+          </div>
+        </div>
+        <p>Bench press from 40kg to 100kg. Feeling strong for the first time.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Neha Kapoor</h4>
+            <span>Toned Body</span>
+          </div>
+        </div>
+        <p>Got my dream physique. Abs visible after 4 months of consistency.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Karan Malhotra</h4>
+            <span>15kg Fat Loss</span>
+          </div>
+        </div>
+        <p>Transformed from dad bod to fit dad. Energy levels through the roof.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Anjali Rao</h4>
+            <span>Marathon Ready</span>
+          </div>
+        </div>
+        <p>Ran my first half-marathon. Conditioning program changed my life.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Vishal Thakur</h4>
+            <span>Muscle Gain</span>
+          </div>
+        </div>
+        <p>Gained 12kg lean muscle. Looking jacked at 35 years old.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Meera Joshi</h4>
+            <span>20kg Down</span>
+          </div>
+        </div>
+        <p>20kg gone in 7 months. Wedding-ready and feeling amazing.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Rajesh Nair</h4>
+            <span>Powerlifter</span>
+          </div>
+        </div>
+        <p>Total lift increased by 200kg. Strength program is legit.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Simran Kaur</h4>
+            <span>Fitness Model</span>
+          </div>
+        </div>
+        <p>Stage-ready physique. Group classes kept me motivated.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Akash Verma</h4>
+            <span>Endurance Beast</span>
+          </div>
+        </div>
+        <p>From couch to 10K runner. Conditioning transformed me.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Divya Sharma</h4>
+            <span>Post-Baby Fit</span>
+          </div>
+        </div>
+        <p>Back to pre-pregnancy weight + toned. Recovery program saved me.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Saurabh Gupta</h4>
+            <span>25kg Lost</span>
+          </div>
+        </div>
+        <p>Diabetes reversed. 25kg down and off medication.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Riddhi Patel</h4>
+            <span>Lean & Strong</span>
+          </div>
+        </div>
+        <p>Lost fat, gained muscle. Feeling powerful and feminine.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Mohit Bansal</h4>
+            <span>Corporate Fit</span>
+          </div>
+        </div>
+        <p>Busy professional → fit professional. Time-efficient workouts work.</p>
+      </div>
+
+      <div class="s-card">
+        <div class="s-top">
+          <img src="assets/icons/user.png" alt="">
+          <div>
+            <h4>Tanya Singh</h4>
+            <span>Complete Glow-Up</span>
+          </div>
+        </div>
+        <p>Total transformation. Confidence through the roof.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="testimonials reveal" id="testimonials">
+  <div class="container">
+   <h2 class="section-title">
+  Real <span class="accent">Transformations</span>
+</h2>
+
+<p class="section-sub">
+  Real people. Real results. No shortcuts.
+</p>
+
+    <div class="testimonial-stack">
+
+      <div class="t-card card1">
+         <div class="t-top">
+    <img src="assets/images/rahul.jpg" alt="">
+    <div>
+        <h4>Rahul</h4>
+        <span>100kg → 82kg</span>
+        </div>
+        </div>
+        <p>Lost 18kg in 4 months. The structure made everything simple.</p>
+      </div>
+
+      <div class="t-card card2">
+         <div class="t-top">
+    <img src="assets/images/amit.jpg" alt="">
+    <div>
+        <h4>Amit</h4>
+        <span>Skinny → Lean Muscle</span>
+        </div>
+        </div>
+        <p>Finally built muscle after years of trying different gyms.</p>
+      </div>
+
+      <div class="t-card card3">
+         <div class="t-top">
+    <img src="assets/images/sandeep.jpg" alt="">
+    <div>
+        <h4>Sandeep</h4>
+        <span>Beginner → Athlete</span>
+        </div>
+        </div>
+        <p>My strength and endurance improved massively.</p>
+      </div>
+
+      <div class="t-card card4">
+         <div class="t-top">
+    <img src="assets/images/rohit.jpg" alt="">
+    <div>
+        <h4>Rohit</h4>
+        <span>Fat Loss</span>
+        </div>
+        </div>
+        <p>Coaches actually care. Results are real.</p>
+      </div>
+
+      <div class="t-card card5">
+         <div class="t-top">
+    <img src="assets/images/vikram.jpg" alt="">
+    <div>
+        <h4>Vikram</h4>
+        <span>Transformation</span>
+        </div>
+        </div>
+        <p>Best decision I made this year.</p>
+      </div>
+
+    </div>
+  </div>
+ <div class="testimonial-cta">
+  <a href="#" class="btn secondary stories-btn">Read More Success Stories</a>
+</div>
+<section class="cta reveal">
+  <div class="cta-content">
+
+    <h2>
+      Ready To <span class="accent">Actually Change?</span>
+    </h2>
+
+    <p>
+      You’ve seen the programs. You’ve seen the results.  
+      The only thing left is deciding if you’re serious or not.
+    </p>
+
+    <div class="cta-box">
+      <div class="cta-offer">   
+        <span class="cta-mark" aria-hidden="true">✓</span>
+        <span class="cta-text">7-Day Free Trial</span>
+        <span>Cancel Anytime</span>
+      </div>
+
+      <a href="#" class="btn primary big open-pricing">Claim Your Free Trial</a>
+    </div>
+
+
+  </div>
+</section>
+</section>
+
+<section class="contact reveal" id="contact">
+  <div class="container">
+
+   <h2 class="section-title">
+  Start Your <span class="accent">Transformation</span>
+</h2>
+
+<p class="section-sub">
+  Have questions or ready to join? Reach out and we’ll get you started.
+</p>
+
+    <div class="contact-box">
+
+      <div class="contact-info">
+        <h2>Contact Info</h2>
+        <p></p><p></p>
+        <p>Email: fitclub@gmail.com</p>
+        <p>Phone: +977 98765 43210</p>
+        <p>Location: Butwal</p>
+      </div>
+
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="btn primary">Send Message</button>
+      </form>
+
+    </div>
+
+  </div>
+</section>
+<footer class="footer">
+  <div class="footer-box">
+
+    <div class="footer-grid">
+
+      <div>
+        <h4>Programs</h4>
+        <a href="#">Strength Training</a>
+        <a href="#">Fat Loss</a>
+        <a href="#">Conditioning</a>
+        <a href="#">Plans</a>
+        <a href="#">Free Trial</a>
+      </div>
+
+      <div>
+        <h4>Support</h4>
+        <a href="#">FAQs</a>
+        <a href="#contact">Contact</a>
+        <a href="#">Email Support</a>
+        <a href="#">Help Center</a>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Blog</a>
+        <a href="#">Success Stories</a>
+        <a href="#">Guides</a>
+      </div>
+
+      <div>
+        <h4>Socials</h4>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Twitter</a>
+        <a href="#">Facebook</a>
+      </div>
+
+    </div>
+
+    <!-- CENTER BRAND BLOCK -->
+    <div class="footer-center">
+      <h3>FITCLUB</h3>
+      <p>
+        Transform your body with structured training, expert coaching,
+        and a system built for real results.
+      </p>
+
+      <span class="copyright">
+        © 2026 FitClub. All rights reserved.
+      </span>
+
+      <div class="footer-legal">
+        <a href="#">Terms</a>
+        <a href="#">Privacy</a>
+        <a href="#">Refund</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
